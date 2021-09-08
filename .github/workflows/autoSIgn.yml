@@ -32,4 +32,4 @@ jobs:
         pass: ${{secrets.pass}}
         to: ${{secrets.to}}
         cookie: ${{secrets.cookie}}
-      run: user=${user} pass=${pass} to=${to} cookie=${cookie}node index.js
+      run: user=${user} pass=${pass} to=${to} cookie=${cookie} node index.js
