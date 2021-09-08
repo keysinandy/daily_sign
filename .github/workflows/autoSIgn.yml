@@ -27,7 +27,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - name: install dependencies
-    - run: yarn
+      run: yarn
     - name: set env
       env:
         user: ${{secrets.user}}
@@ -35,4 +35,4 @@ jobs:
         to: ${{secrets.to}}
         cookie: ${{secrets.cookie}}
     - name: run script
-    - run: yarn run sign
+      run: yarn run sign
