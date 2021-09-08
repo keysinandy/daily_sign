@@ -26,11 +26,10 @@ jobs:
         cache: 'npm'
     - name: install dependencies
       run: yarn
-    - name: set env
+    - name: set env and run script
       env:
         user: ${{secrets.user}}
         pass: ${{secrets.pass}}
         to: ${{secrets.to}}
         cookie: ${{secrets.cookie}}
-    - name: run script
       run: user=${user} pass=${pass} to=${to} cookie=${cookie}node index.js
